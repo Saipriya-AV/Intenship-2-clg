@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Add Bootstrap CSS link -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="main.html">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="main.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Artworks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="jumbotron" style="background: radial-gradient(circle, #28768a, #001D36);">
+        <div class="container text-center">
+            <h1 class="typing-text">Welcome to My Portfolio</h1>
+            <p>Showcasing my work and skills!</p>
+        </div>
+    </section>
+    
+
+    <!-- About Section -->
+    <section class="about-me">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <img src="images/profile.jpg" alt="My Photo" class="profile-image">
+            </div>
+            <div class="col-lg-6">
+              <div class="about-content">
+                <h1 class="about-heading">About Me</h1>
+                <br>
+                <ap>
+                    Hello, I'm Saipriya! I love to code and create innovative projects that push boundaries. When I'm not immersed in the world of technology, you'll often find me with a sketchbook in hand, letting my creative ideas flow onto paper. 
+                    Drawing has always been a source of inspiration and relaxation for me.
+                    My curiosity knows no bounds, and I'm constantly seeking new challenges and opportunities to learn.
+                </ap>
+                <ap>
+                    An ambitious and self-motivated student seeking to do research, I am driven by a relentless curiosity, a strong work ethic, and a profound interest in computer science and engineering topics.
+                </p>
+                <button class="abtn abtn-primary">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="timeline" id="Education">
+        <h1 class="about-heading text-center">Education</h1>
+        <br>
+        <div class="tcontainer">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h2><b>2021 - Present</b></h2>
+              <h3>Bachelor's in Engineering Degree</h3>
+              <p>New Horizon College of Engineering</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h2><b>2021</b></h2>
+              <h3>12th Grade</h3>
+              <p>JSS Public School</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h2><b>2019</b></h2>
+              <h3>10th Grade</h3>
+              <p>JSS Public School</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="resume" id="resume">
+        <h1 class="about-heading text-center">Technical Skills</h1>
+        <br>
+        <div class="container">
+            <div class="skills-list">
+                <div>
+                    <i class="fab fa-html5"></i>
+                    <h2><b>Web Design</b></h2>
+                    <p>Created interactive web applications including a Computer Science resource webpage and a quiz portal for students using HTML, CSS, JavaScript, and PHP.</p>
+                </div>
+                <div>
+                    <i class="fab fa-python"></i>
+                    <h2><b>Python</b></h2>
+                    <p>Developed Python-based projects such as a COVID-19 website using Django and a Water Management System as well.</p>
+                </div>
+                <div>
+                    <i class="fab fa-java"></i>
+                    <h2><b>Java</b></h2>
+                    <p>Designed a Java-based bank management system with Swing, showcasing skills in GUI development and database management for financial applications.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="resume" id="resume">
+        <h1 class="about-heading text-center">Resume</h1>
+        <br>
+        <div class="bucontainer">
+            <button id="resume-button">View Resume</button>
+        </div>
+    </section>
+        
+    
+
+
+    <button id="scrollTopButton" class="scroll-top-button">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <!--Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
