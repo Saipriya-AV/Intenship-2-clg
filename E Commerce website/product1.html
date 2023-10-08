@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><i class="fas fa-seedling" style="color: green;"></i> Plant Shop</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto navbar-menu">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" >Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html" target="_blank">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product1.html" >Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html" target="_blank">Contact</a>
+                        </li>
+                        <li class="nav-item" >
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-user"></i> 
+                            </a>
+                        </li>
+                        <li class="nav-item" id="cart-nav-item">
+                            <a class="nav-link" href="cart.html">
+                                <i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)
+                            </a>
+                            <div id="cart-popover" class="cart-popover">
+                             
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="featured-products">
+        <div class="container">
+            <h1>Our Products
+            </h1>
+            <br><br>
+            <div class="row" id="product-list">
+              
+            </div>
+        </div>
+    </section>
+    <section id="next">
+        <div class="container">
+            <a href="product2.html"  style="text-decoration: none;">
+                <button  style="font-family: 'Source Sans Pro', sans-serif;" class="add-to-cart float-right " >Next ➡</button>
+            </a>
+            
+                
+                <br><br>
+        </div> 
+       
+    </section>
+    <footer>
+        &copy; 2023 Plant Shop. All rights reserved.
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="cart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,395 @@
+/* Default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Sans Pro', serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Navbar styles */
+header {
+    background-color: transparent; 
+}
+
+.navbar {
+    padding: 10px 0;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    text-decoration: none;
+    color: black !important; 
+}
+
+
+.navbar-brand:hover {
+    border-bottom: none;
+}
+
+.navbar-toggler-icon {
+    color: black; 
+}
+
+.navbar-menu {
+    list-style: none;
+}
+
+.navbar-menu li {
+    margin-right: 20px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: black !important; 
+    position: relative; 
+}
+
+
+.navbar-menu a:hover {
+    color: green; 
+}
+
+.navbar-menu a:hover::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: green;
+    bottom: -5px; 
+    left: 0;
+}
+
+/* Hero section styles */
+.hero {
+    position: relative;
+    background-image: url('growing-plants-home-concept.jpg'); 
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: white; /
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.2); 
+    opacity: 0.5;
+    z-index: -1; 
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Featured products section styles */
+.featured-products {
+    padding: 40px 0;
+}
+
+.featured-products h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+.add-to-cart {
+    background-color: green;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.add-to-cart:hover {
+    background-color:  #24402a;
+}
+
+/* User icon */
+.navbar .nav-link i {
+    margin-right: 5px;
+}
+
+/* Style for contact form and location */
+
+.contact .list-unstyled {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact .list-unstyled li {
+    margin-bottom: 10px;
+    color: #333; 
+}
+
+.contact .list-unstyled li i {
+    margin-right: 10px;
+    color: green; 
+}
+
+
+
+/* Style for the footer */
+footer {
+    background-color: #24402a; 
+    color: white; 
+    padding: 20px 0;
+    margin-top: 0; 
+    text-align: center; 
+    clear: both; 
+    margin-bottom: 0; 
+}
+
+.col-md-6.with-border {
+    border-right: 2px solid black;
+}
+
+/* Additional styles for the About Us page */
+.about {
+    background-color: #24402a;
+    padding: 50px 0;
+}
+
+.about h1{
+    color: white;
+}
+.about p {
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+.about img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.about .description {
+    margin-right: 0x; 
+}
+
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+}
+
+.testimonial {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 0px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-text {
+    font-size: 18px;
+    color: #333;
+}
+
+.testimonial-author {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.testimonials h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.cart-popover {
+    position: absolute;
+    margin-top: 10px;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: none; 
+    z-index: 1; 
+}
+
+/* Remove Button */
+.remove-from-cart {
+    background-color: #ff0000; 
+    color: #fff; 
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.remove-from-cart:hover {
+    background-color: #cc0000; 
+}
+
+
+
+.features-section {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.feature {
+    margin-bottom: 30px;
+}
+
+.feature .icon-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: green; 
+    border-radius: 50%; 
+    margin: 0 auto 20px; 
+}
+
+.feature .icon-circle i {
+    font-size: 36px;
+    color: #fff; 
+}
+
+.feature h3 {
+    font-size: 20px;
+}
+
+.feature p {
+    font-size: 16px;
+}
+
+/* Style for small product images */
+.small-image {
+    max-width: 150px; 
+    height: auto;
+    margin-right: 20px; 
+}
+
+
+.btn-rounded {
+    border-radius: 0px; 
+}
+
+.increase-quantity,
+.decrease-quantity {
+    background-color: black; 
+    color: white; 
+    margin-right: 10px; 
+}
+
+
+hr.my-4 {
+    border-color: #ccc; 
+}
+
+
+.coupon-section input {
+    margin-right: 10px; 
+}
+
+.apply-coupon {
+    background-color: green; 
+    color: white; 
+}
+
+
+.checkout button {
+    background-color: #007bff; 
+    color: white; 
+}
+
+.btn-sharp {
+    border-radius: 0;
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px; 
+}
+
+
+
+.apply-coupon-btn {
+    background-color: green;
+    color: #fff;
+}
+
+.checkout-btn {
+    background-color: green;
+    color: #fff;
+}
+
+.btn-primary{
+    border: 0px;
+    border-radius: 0px;
+}
+
+.btn-grp{
+    border-radius: 0px;
+}
