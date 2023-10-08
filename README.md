@@ -16,9 +16,9 @@ The E-Commerce Website contains the following:
 **About Page:** Discover the story behind Plant World and our commitment to sustainable gardening.<br>
 **Products Page:** Shop for a diverse range of plants, from elegant indoor plants to succulents.<br>
 **Contact Page:** Connect with us for expert advice and support on plant care.<br>
-**Cart Page:** Review and finalize your selection of green companions for your home.<br>
+**Cart Page:** Review and finalize your selection of green companions for your home.<be>
+<br><br><br>
 
-<hr>
 **Project-1**
 <br>
 **Project Title:** Portfolio Website Development
