@@ -1,7 +1,25 @@
 # Intenship-2-clg
 Web Development Internship 
 <br>
-Project-1
+**Project-2**
+<br>
+**Project Title:** Plant World- Your Online Plant Store (E-commerce Website)
+<br><br>
+**Project Description:**
+Plant World is an innovative e-commerce website designed to bring the joy of nature into the digital realm. Our platform offers a vast selection of exquisite plants, making it effortless for plant enthusiasts to browse, select, and purchase greenery that adds life and beauty to their surroundings.
+<br>
+**Technologies Used:** HTML, CSS, JavaScript, Bootstrap
+
+The E-Commerce Website contains the following:
+<br>
+**Home Page:** Explore a variety of plant options and also get to know about our company. <br>
+**About Page:** Discover the story behind Plant World and our commitment to sustainable gardening.<br>
+**Products Page:** Shop for a diverse range of plants, from elegant indoor plants to succulents.<br>
+**Contact Page:** Connect with us for expert advice and support on plant care.<br>
+**Cart Page:** Review and finalize your selection of green companions for your home.<br>
+
+<hr>
+**Project-1**
 <br>
 **Project Title:** Portfolio Website Development
 <br><br>
