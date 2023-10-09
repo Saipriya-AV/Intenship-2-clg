@@ -1,4 +1,4 @@
-const cartNavItem = $('#cart-nav-item'); // The navigation item to trigger the hover effect
+const cartNavItem = $('#cart-nav-item'); 
 const cartPopover = $('#cart-popover');
 const cart = new Map(); // Map to store cart items and their quantities
 let isHovered = false; // Flag to track hover state
@@ -178,7 +178,7 @@ function displayCartPopover() {
             }
         }
 
-        // Add total price
+        
         const totalItem = $('<div class="cart-item total-item"></div>');
         totalItem.html(`
             <p><b>Total: ₹ ${calculateTotalPrice()}</b></p>
@@ -192,10 +192,9 @@ function displayCartPopover() {
             left: cartNavOffset.left,
         });
 
-        // Display the cart popover
         cartPopover.css('display', 'block');
     } else {
-        // Hide the cart popover
+       
         cartPopover.css('display', 'none');
     }
 }
@@ -203,11 +202,11 @@ function displayCartPopover() {
 // Event listeners for hover-based cart display
 cartNavItem.hover(
     () => {
-        isHovered = true; // Set hover flag when entering
+        isHovered = true; 
         displayCartPopover();
     },
     () => {
-        isHovered = false; // Clear hover flag when leaving
+        isHovered = false; 
         displayCartPopover();
     }
 );
@@ -232,7 +231,6 @@ $(document).ready(() => {
 
         productList.append(productCard);
 
-        // Add event listener to each "Add to Cart" button for hover-based display
         productCard.hover(() => {
             // Mouse enter (hover) event
             const addToCartButton = productCard.find('.add-to-cart');
@@ -248,7 +246,7 @@ $(document).ready(() => {
                 saveCartToSessionStorage(); 
             });
         }, () => {
-            // Mouse leave event (empty callback)
+           
         });
     });
 });
@@ -274,23 +272,23 @@ $(document).ready(() => {
 
         productList.append(productCard);
 
-        // Add event listener to each "Add to Cart" button for hover-based display
+   
         productCard.hover(() => {
             // Mouse enter (hover) event
             const addToCartButton = productCard.find('.add-to-cart');
             addToCartButton.off('click').on('click', () => {
                 const productName = product.name;
                 if (cart.has(productName)) {
-                    cart.set(productName, cart.get(productName) + 1); // Increment quantity
+                    cart.set(productName, cart.get(productName) + 1); 
                 } else {
-                    cart.set(productName, 1); // Set quantity to 1 for new items
+                    cart.set(productName, 1); 
                 }
                 updateCartCount();
                 saveCartToLocalStorage();
                 saveCartToSessionStorage(); 
             });
         }, () => {
-            // Mouse leave event (empty callback)
+            
         });
     });
 });
@@ -305,7 +303,7 @@ function saveCartToLocalStorage() {
 
 
 
-// Load cart data from localStorage and sessionStorage and display it on page load
+// Load cart data from localStorage/sessionStorage and display it on pageload
 $(document).ready(() => {
     clearCartDataForNewSession(); 
     loadCartFromLocalStorage();
