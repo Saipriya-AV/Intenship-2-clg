@@ -1,6 +1,23 @@
 # Intenship-2-clg
 Web Development Internship 
 <br>
+**Project-3**
+<br>
+**Project Title:** TaskWise- Your Online To-Do List 
+<br><br>
+**Project Description:**
+TaskWise is a task management tool that helps individuals and teams organize their daily activities and responsibilities. Users can create, prioritize, and track tasks, set deadlines, and mark items as completed, providing an effective way to manage and stay on top of their workload and goals.
+<br>
+**Technologies Used:** HTML, CSS, JavaScript, Bootstrap
+<br>
+Features:
+**Add Task:** Users can add new tasks to the list by providing task descriptions and due dates.<br>
+**Edit Task:** Users can edit existing tasks to update their descriptions.<br>
+**Delete Task:** Users can remove tasks from the list when they're no longer needed.<br>
+**Local Storage:** The application stores tasks in local storage, ensuring data is retained between sessions.<br>
+**Toggle Theme:** Users can switch between dark and light themes for a personalized viewing experience. <br>
+<br>
+<br>
 **Project-2**
 <br>
 **Project Title:** Plant World- Your Online Plant Store (E-commerce Website)
