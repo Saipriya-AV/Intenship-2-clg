@@ -1,0 +1,291 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(100,77,224,1) 19%, rgba(95,84,189,1) 43%, rgba(252,70,107,1) 100%);
+    margin: 0;
+    padding: 0;
+    color: #fff; 
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: background-color 0.3s ease;
+    background-color: #f5f5f5; 
+    color: #333; 
+}
+
+.dark-theme .container {
+    background-color: #444; 
+    color: #fff; 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+/* Switch style */
+.theme-toggle .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.theme-toggle .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.theme-toggle .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.theme-toggle .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+.theme-toggle input:checked + .slider {
+    background-color: #007bff;
+}
+
+.theme-toggle input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+h1 {
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+/*Dark theme */
+#taskInput, #dueDateInput, #searchInput, #sortTasks {
+    border-radius: 0px;
+    padding: 10px;
+    border: 1px solid #a0a0a0;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 16px;
+    outline: none;
+    margin-top: 10px;
+    color: #333; 
+}
+
+#addTask {
+    border: none;
+    border-radius: 0px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease; 
+}
+
+#addTask:hover {
+    background-color: #0056b3;
+}
+
+
+.list-group {
+    list-style: none;
+    padding: 0;
+}
+
+/* Dark Theme Styles */
+.dark-theme {
+    background: #1f1e1e; 
+    color: #fff; 
+
+}
+
+.dark-theme .input-group input,
+.dark-theme .input-group select,
+.dark-theme .input-group button 
+.dark-theme .input-group .due-date{
+    background-color: #333; 
+    color: #fff; 
+}
+
+.dark-theme .input-group select option {
+    background-color: #222; 
+    color: #fff; 
+}
+
+.dark-theme #searchAndSort input {
+    background-color: #333; 
+    color: #fff; 
+}
+
+
+
+.dark-theme #searchAndSort select {
+    background-color: #333; 
+    color: #fff; 
+}
+
+.dark-theme #dueDateInput {
+    background-color: #333; 
+    color: #fff;
+}
+
+.dark-theme #taskInput{
+    background-color: #333; 
+    color: #fff;
+}
+
+
+
+/* Adjusted row colors for dark theme */
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff; 
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-theme .task {
+    background-color: #333; 
+    color: #fff;
+}
+
+.task:hover {
+    background-color: #efeaea;
+    color: #000;
+}
+
+.task.completed {
+    text-decoration: line-through;
+}
+
+/*checkbox styles */
+.task.completed .task-delete {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.task.completed .task-delete i {
+    color: #ff0000;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.task.completed .due-date {
+    color: #6c757d;
+}
+
+.task .checkbox i {
+    display: none;
+}
+
+.task .text {
+    flex-grow: 1;
+}
+
+.task .due-date {
+    font-size: 16px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.task .task-edit, .task .task-delete {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.task .task-delete i {
+    color: #ff0000;
+    font-size: 18px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+#searchAndSort {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Checkbox styles */
+.custom-checkbox {
+    display: flex; 
+    position: relative;
+    padding-top: 7px;
+    padding-left: 20px; 
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox .checkmark {
+    position: relative;
+    left: 0;
+    height: 20px; 
+    width: 20px; 
+    background-color: #fff;
+    border: 1px solid #000; 
+    border-radius: 0px;
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+
+.custom-checkbox .checkmark i {
+    display: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+    background-color: #28a745;
+    border: none;
+    
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark i {
+    display: inline-block;
+    color: #fff; 
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

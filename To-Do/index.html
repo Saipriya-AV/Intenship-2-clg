@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5" id="task-container">
+        <div class="header">
+            <h1 class="text-center">TaskWise</h1>
+            <div class="theme-toggle">
+                <label class="switch">
+                    <input id="themeToggle" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+        <div class="input-group mb-3">
+            <input type="text" id="taskInput" class="form-control" placeholder="Add a new task">
+            <input type="date" id="dueDateInput" class="form-control">
+            <div class="input-group-append">
+                <button id="addTask" class="btn btn-primary">Add</button>
+            </div>
+        </div>
+        <div id="searchAndSort" class="d-flex justify-content-between">
+            <input type="text" id="searchInput" class="form-control" placeholder="Search tasks">
+            <select id="sortTasks" class="form-control">
+                <option value="date">Sort by Date</option>
+                <option value="alphabetical">Sort Alphabetically</option>
+            </select>
+        </div>
+        <br><br>
+        <ul class="list-group" id="taskList"></ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
