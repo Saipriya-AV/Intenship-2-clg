@@ -1,6 +1,23 @@
 # Intenship-2-clg
 Web Development Internship 
 <br>
+**Project-4**
+<br>
+**Project Title: QuizPulse- Online quiz website**
+<br><br>
+**Project Description:**
+QuizPulse is an engaging and interactive online quiz platform that empowers users to challenge their knowledge, take quizzes on a variety of topics, and compete with others on the leaderboard. This web application combines the power of HTML, CSS, JavaScript, PHP, and authentication to deliver an enjoyable quiz-taking experience.
+<br>
+Features:
+<br>
+**User Registration and Authentication:** Users can securely create accounts and log in to access personalized features.<br>
+**Quiz Library:** A wide range of quizzes covering various topics for users to explore.<br>
+**Quiz-Taking:** Users can answer questions and receive real-time feedback with a built-in timer.<br>
+**Quiz Scoring:** Instant score results and detailed feedback on quiz performance.<br>
+**Leaderboard:** A competitive element with real-time rankings of top performers.<br>
+**Retake Quizzes:** Users can revisit quizzes to improve their scores and knowledge.<br>
+**User Profiles:** Personalized profiles showcasing user achievements.<br>
+<br>
 **Project-3**
 <br>
 **Project Title:** TaskWise- Your Online To-Do List 
